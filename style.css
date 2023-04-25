@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center; /*alinhamento vertical*/
+    justify-content: space-evenly; /*alinhamento horizontal*/
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.726);
+}
+
+a{
+    text-decoration: none;
+    font-size: 20.8px;
+    color: #552823;
+    font-weight: 700;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+.altura{
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.carousel, .carousel-inner{
+    height: 100vh;
+}
+
+/*Cardapio*/
+
+#sectionCardapio{
+    background-color: #552823;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.itemCardapio{
+    padding: 20px 50px;
+    color: bisque;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.itemCardapio:hover{
+    transform: scale(1.1);
+    color: rgb(226, 150, 43);
+}
+
+.itemCardapio img{
+    width: 200px;
+}
+
+#modalCapuccino, #modalTorta{
+    display: none;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.modalitemsCardapio{
+    position: absolute;
+    z-index: 999;
+    color: black;
+    background-color: bisque;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.modal-content-items{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.conteudo-flex{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close, .closeTortas{
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #8b463e;
+    color: white;
+    padding: 0 15px;
+    border-radius: 80px;
+}
+
+.modal-content-topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tituloCardapio{
+    color: #8b463e;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
